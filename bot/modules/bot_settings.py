@@ -54,29 +54,29 @@ bool_vars = ['AS_DOCUMENT', 'BOT_PM', 'STOP_DUPLICATE', 'SET_COMMANDS', 'SAVE_MS
 
 async def load_config():
 
-    BOT_TOKEN = environ.get('BOT_TOKEN', '')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '7708060144:AAGUAOYKlrScXpT8tODNSVjYkEnahVcaeOM')
     if len(BOT_TOKEN) == 0:
         BOT_TOKEN = config_dict['BOT_TOKEN']
 
-    TELEGRAM_API = environ.get('TELEGRAM_API', '')
+    TELEGRAM_API = environ.get('TELEGRAM_API', '22920744')
     if len(TELEGRAM_API) == 0:
         TELEGRAM_API = config_dict['TELEGRAM_API']
     else:
         TELEGRAM_API = int(TELEGRAM_API)
 
-    TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '')
+    TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '31cb93c017f265e4fa6d0ba91236b826')
     if len(TELEGRAM_HASH) == 0:
         TELEGRAM_HASH = config_dict['TELEGRAM_HASH']
 
     BOT_MAX_TASKS = environ.get('BOT_MAX_TASKS', '')
     BOT_MAX_TASKS = int(BOT_MAX_TASKS) if BOT_MAX_TASKS.isdigit() else ''
     
-    OWNER_ID = environ.get('OWNER_ID', '')
+    OWNER_ID = environ.get('OWNER_ID', '5659668981')
     OWNER_ID = config_dict['OWNER_ID'] if len(OWNER_ID) == 0 else int(OWNER_ID)
 
-    DATABASE_URL = environ.get('DATABASE_URL', '')
+    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://starastar230:@cluster0.5mhoa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'')
     if len(DATABASE_URL) == 0:
-        DATABASE_URL = ''
+        DATABASE_URL = 'mongodb+srv://starastar230:@cluster0.5mhoa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0''
 
     DOWNLOAD_DIR = environ.get('DOWNLOAD_DIR', '')
     if len(DOWNLOAD_DIR) == 0:
@@ -388,16 +388,16 @@ async def load_config():
     if len(FSUB_IDS) == 0:
         FSUB_IDS = ''
     
-    LINKS_LOG_ID = environ.get('LINKS_LOG_ID', '')
+    LINKS_LOG_ID = environ.get('LINKS_LOG_ID', '-1002289124600')
     LINKS_LOG_ID = '' if len(LINKS_LOG_ID) == 0 else int(LINKS_LOG_ID)
 
     MIRROR_LOG_ID = environ.get('MIRROR_LOG_ID', '')
     if len(MIRROR_LOG_ID) == 0:
-        MIRROR_LOG_ID = ''
+        MIRROR_LOG_ID = '-1002289124600'
         
     LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '')
     if len(LEECH_LOG_ID) == 0:
-        LEECH_LOG_ID = ''
+        LEECH_LOG_ID = '-1002289124600'
         
     EXCEP_CHATS = environ.get('EXCEP_CHATS', '')
     if len(EXCEP_CHATS) == 0:
@@ -412,7 +412,7 @@ async def load_config():
     PLAYLIST_LIMIT = environ.get('PLAYLIST_LIMIT', '')
     PLAYLIST_LIMIT = '' if len(PLAYLIST_LIMIT) == 0 else int(PLAYLIST_LIMIT)
 
-    BOT_PM = environ.get('BOT_PM', '')
+    BOT_PM = environ.get('BOT_PM', 'True')
     BOT_PM = BOT_PM.lower() == 'true'
 
     DAILY_TASK_LIMIT = environ.get('DAILY_TASK_LIMIT', '')
@@ -442,11 +442,11 @@ async def load_config():
 
     AUTHOR_NAME = environ.get('AUTHOR_NAME', '')
     if len(AUTHOR_NAME) == 0:
-        AUTHOR_NAME = 'WZML-X'
+        AUTHOR_NAME = 'ARLEECH'
 
     AUTHOR_URL = environ.get('AUTHOR_URL', '')
     if len(AUTHOR_URL) == 0:
-        AUTHOR_URL = 'https://t.me/WZML_X'
+        AUTHOR_URL = 'https://t.me/akash_roy_official'
 
     TITLE_NAME = environ.get('TITLE_NAME', '')
     if len(TITLE_NAME) == 0:
