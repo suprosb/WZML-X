@@ -74,9 +74,9 @@ async def load_config():
     OWNER_ID = environ.get('OWNER_ID', '5659668981')
     OWNER_ID = config_dict['OWNER_ID'] if len(OWNER_ID) == 0 else int(OWNER_ID)
 
-    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://starastar230:@cluster0.5mhoa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'')
+    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     if len(DATABASE_URL) == 0:
-        DATABASE_URL = 'mongodb+srv://starastar230:@cluster0.5mhoa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0''
+        DATABASE_URL = 'mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
     DOWNLOAD_DIR = environ.get('DOWNLOAD_DIR', '')
     if len(DOWNLOAD_DIR) == 0:
@@ -220,7 +220,7 @@ async def load_config():
     AUTO_DELETE_MESSAGE_DURATION = environ.get(
         'AUTO_DELETE_MESSAGE_DURATION', '')
     if len(AUTO_DELETE_MESSAGE_DURATION) == 0:
-        AUTO_DELETE_MESSAGE_DURATION = 30
+        AUTO_DELETE_MESSAGE_DURATION = 5
     else:
         AUTO_DELETE_MESSAGE_DURATION = int(AUTO_DELETE_MESSAGE_DURATION)
 
